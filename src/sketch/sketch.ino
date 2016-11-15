@@ -27,8 +27,8 @@ void setup() {
 void loop() {
   cur_score = analogRead(score_input_pin);
 
-  if (cur_score - prev_score >= -80 && cur_score - prev_score <= 80) {
-    return delay(2);
+  if (cur_score - prev_score >= -99 && cur_score - prev_score <= 99) {
+    return delay(4);
   }
   
   show_score_display(cur_score);
