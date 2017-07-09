@@ -4,7 +4,7 @@ Uses an [Arduino Micro](https://store.arduino.cc/arduino-micro) with a [Velostat
 
 <p align="center">
   <a href="http://www.youtube.com/watch?v=FRkOJmAujnU">
-    <img src="https://github.com/hfreire/nerf-digital-target/raw/master/share/youtube/nerf-digital-target-work-in-progress.png" width="620"></p>
+    <img src="share/youtube/nerf-digital-target-work-in-progress.png" width="620"></p>
   </a>
 </p>
 
