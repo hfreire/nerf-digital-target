@@ -7,4 +7,4 @@ Uses an [Arduino Micro](https://store.arduino.cc/arduino-micro) with a [Velostat
 </p>
 
 ### Features
-* Detect, :muscle: measure and display :dart: dart hits impact on the target :white_check_mark:
+* Detect, :muscle: measure and display :dart: dart hit impacts on the target :white_check_mark:
