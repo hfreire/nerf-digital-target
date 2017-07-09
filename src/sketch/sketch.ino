@@ -1,3 +1,10 @@
+/*
+ * Copyright (c) 2017, Hugo Freire <hugo@exec.sh>.
+ *
+ * This source code is licensed under the license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
 #include <avr/power.h>
 #include <Wire.h>
 #include <Adafruit_GFX.h>
@@ -30,7 +37,7 @@ void loop() {
   if (cur_score - prev_score >= -99 && cur_score - prev_score <= 99) {
     return delay(4);
   }
-  
+
   show_score_display(cur_score);
 
   delay(1000);
