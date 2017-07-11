@@ -3,7 +3,7 @@
 Uses an [Arduino Micro](https://store.arduino.cc/arduino-micro) with a [Velostat](https://en.wikipedia.org/wiki/Velostat) pressure sensor circuit to show dart hits on a [4-Digit 7-Segment Display](https://www.adafruit.com/product/880).
 
 <p align="center">
-  <a href="http://www.youtube.com/watch?v=FRkOJmAujnU"><img src="share/github/overview.png" width="720"></p></a>
+  <a href="http://www.youtube.com/watch?v=FRkOJmAujnU"><img src="share/github/overview.png" width="620"></p></a>
 </p>
 
 ### Features
