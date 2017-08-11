@@ -12,5 +12,5 @@ Uses an [Adafruit Trinket](https://www.adafruit.com/product/1501) with a [Velost
 ### How to build
 
 <p align="center">
-  <img src="share/github/breadboard.png" width="620"/>
+  <img src="share/github/breadboard.png" width="400"/>
 </p>
