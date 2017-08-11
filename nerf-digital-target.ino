@@ -18,14 +18,11 @@ void reset_score_display ();
 
 const float VCC = 5.0; // Measured voltage of Ardunio 5V line
 const float R_DIV = 98.0; // Measured resistance of 100 resistor
-// const int score_input_pin = 2; // Adafruit Trinket
-const int score_input_pin = A5; // Arduino Micro
+const int score_input_pin = 2; // Adafruit Trinket Analog A2 pin
 int prev_score = 0;
 int cur_score = 0;
 
 void setup() {
-  Serial.begin(9600);
-
   if (F_CPU == 16000000) clock_prescale_set(clock_div_1);
 
   init_score_display();
