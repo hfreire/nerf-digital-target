@@ -1,7 +1,7 @@
+set(CMAKE_TOOLCHAIN_FILE cmake/platforms/arduino/arduino.cmake)
+
 cmake_minimum_required(VERSION 3.2)
 project(nerf-digital-target)
-
-set(CMAKE_TOOLCHAIN_FILE cmake/platforms/arduino/arduino.cmake)
 
 link_directories(${CMAKE_CURRENT_SOURCE_DIR}/lib)
 
