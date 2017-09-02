@@ -10,6 +10,30 @@ Uses an [Adafruit Trinket](https://www.adafruit.com/product/1501) with a [Velost
 * Detect, :muscle: measure and display :dart: dart hit impacts on the target :white_check_mark:
 
 ### How to build
+Create build directory
+```
+mkdir build
+```
+
+Change current directory
+```
+cd build
+```
+
+Generate Makefile with Arduino toolchain
+```
+cmake -DCMAKE_TOOLCHAIN_FILE=../cmake/platforms/arduino/arduino.cmake ..
+```
+
+Package image
+```
+make 
+```
+
+Upload image
+```
+make upload
+```
 
 <p align="center">
   <img src="share/github/breadboard.png" width="400"/>

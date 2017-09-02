@@ -1,5 +1,3 @@
-set(CMAKE_TOOLCHAIN_FILE cmake/platforms/arduino/arduino.cmake)
-
 cmake_minimum_required(VERSION 3.2)
 project(nerf-digital-target)
 
