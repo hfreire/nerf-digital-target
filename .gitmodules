@@ -1,0 +1,9 @@
+[submodule "cmake/platforms"]
+	path = cmake/platforms
+	url = https://github.com/hfreire/cmake-toolchains.git
+[submodule "lib/Adafruit_GFX"]
+	path = lib/Adafruit_GFX
+	url = https://github.com/adafruit/Adafruit-GFX-Library.git
+[submodule "lib/Adafruit_LEDBackpack"]
+	path = lib/Adafruit_LEDBackpack
+	url = https://github.com/adafruit/Adafruit_LED_Backpack.git

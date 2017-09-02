@@ -12,12 +12,13 @@
 
 Adafruit_7segment seven_segment = Adafruit_7segment();
 
-void init_score_display ();
-void show_score_display (int score);
-void reset_score_display ();
+void init_score_display();
+void show_score_display(int score);
+void reset_score_display();
 
 const float VCC = 5.0; // Measured voltage of Ardunio 5V line
 const float R_DIV = 98.0; // Measured resistance of 100 resistor
+// const int score_input_pin = A5; // Arduino Micro
 const int score_input_pin = 2; // Adafruit Trinket Analog A2 pin
 int prev_score = 0;
 int cur_score = 0;
@@ -44,7 +45,7 @@ void loop() {
   reset_score_display();
 }
 
-void init_score_display () {
+void init_score_display() {
   seven_segment.begin(0x70);
 
   // display a welcome message
@@ -73,7 +74,7 @@ void init_score_display () {
   reset_score_display();
 }
 
-void show_score_display (int score) {
+void show_score_display(int score) {
   for (int i = 0; i < score + 1; i++) {
     seven_segment.println(i);
     seven_segment.writeDisplay();
@@ -87,10 +88,9 @@ void show_score_display (int score) {
   seven_segment.blinkRate(0);
 }
 
-void reset_score_display () {
+void reset_score_display() {
   // reset to 0
   seven_segment.print(0, DEC);
 
   seven_segment.writeDisplay();
 }
-
