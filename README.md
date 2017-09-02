@@ -10,6 +10,16 @@ Uses an [Adafruit Trinket](https://www.adafruit.com/product/1501) with a [Velost
 * Detect, :muscle: measure and display :dart: dart hit impacts on the target :white_check_mark:
 
 ### How to build
+Clone the GitHub repo
+```
+git clone https://github.com/hfreire/nerf-digital-target.git
+```
+
+Change current directory
+```
+cd nerf-digital-target
+```
+
 Create build directory
 ```
 mkdir build
