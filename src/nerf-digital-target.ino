@@ -16,16 +16,20 @@ void init_score_display();
 void show_score_display(int score);
 void reset_score_display();
 
-const float VCC = 5.0; // Measured voltage of Ardunio 5V line
-const float R_DIV = 98.0; // Measured resistance of 100 resistor
+const float VCC = 5.0; // measured voltage of Adafruit Trinket/Ardunio Micro 5V line
+const float R_DIV = 98.0; // measured resistance of 100 resistor
 // const int score_input_pin = A5; // Arduino Micro
 const int score_input_pin = 2; // Adafruit Trinket Analog A2 pin
 int prev_score = 0;
 int cur_score = 0;
 
 void setup() {
-  if (F_CPU == 16000000) clock_prescale_set(clock_div_1);
-
+  // by default Adafruit Trinket runs at 8 MHz, but we can activate 
+  // the 16 MHz clock - only with Adafruit Trinket 5V version!
+  if (F_CPU == 16000000) {
+    clock_prescale_set(clock_div_1);
+  }
+  
   init_score_display();
 }
 
@@ -89,8 +93,7 @@ void show_score_display(int score) {
 }
 
 void reset_score_display() {
-  // reset to 0
-  seven_segment.print(0, DEC);
+  seven_segment.print(0, DEC);  // reset to 0
 
   seven_segment.writeDisplay();
 }
